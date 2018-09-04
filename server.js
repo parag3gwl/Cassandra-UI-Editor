@@ -66,6 +66,8 @@ app.post('/api/getRecords', (req, resp) => {
                 }
                 else {
                     resp.statusCode = 500
+                    resp.statusMessage = "No Record Found"
+                    resp.json(rows)
                 }
                 
             })
@@ -167,6 +169,5 @@ app.post('/api/makeConnection', (req, resp) => {
         console.log(e)
     }
 })
-
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
