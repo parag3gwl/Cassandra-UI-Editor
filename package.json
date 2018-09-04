@@ -1,0 +1,21 @@
+{
+    "name": "cassandraui",
+    "version": "1.0.0",
+    "scripts": {
+      "client": "cd client && yarn start",
+      "server": "nodemon server.js",
+      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+      "mac": "yarn && open build/index.html && yarn server",
+      "win": "yarn && start build/index.html && yarn server"
+    },
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "cassandra-driver": "latest",
+      "express": "^4.16.3",
+      "nodemon": "^1.17.5"
+    },
+    "devDependencies": {
+      "concurrently": "^3.5.0"
+    }
+  }
+  
