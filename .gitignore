@@ -7,10 +7,6 @@ client/node_modules
 # testing
 /coverage
 
-# production
-/build
-Client/build
-
 # misc
 .DS_Store
 .env.local
